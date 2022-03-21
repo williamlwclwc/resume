@@ -1,0 +1,100 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\usepackage{geometry}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=0.5cm,bottom=0.5cm}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{刘文长}
+
+\basicInfo{
+    \email{wchliu@ucdavis.edu} \textperiodcentered\ 
+    \phone{(+86)155-1051-6891}  \textperiodcentered\
+    \linkedin[wenchang-liu]{https://www.linkedin.com/in/wenchang-liu-938a6bb2} \textperiodcentered\
+    \github[williamlwclwc]{https://github.com/williamlwclwc} \textperiodcentered\
+    \homepage[williamlwclwc.github.io]{https://williamlwclwc.github.io}
+}
+
+\section{教育背景}
+\datedsubsection{\textbf{加州大学戴维斯分校}，加利福尼亚州，美国}{2021 -- 2023}
+\textit{理学硕士}\ 计算机科学, 当前GPA: 4.0
+
+\datedsubsection{\textbf{曼彻斯特大学}, 曼彻斯特，英国}{2018 -- 2020}
+\textit{理学学士}\ 人工智能，2+2交流项目，一等荣誉学位，优秀毕业生证书(成绩排名前10\%)
+
+\datedsubsection{\textbf{华中科技大学}, 武汉, 中国}{2016 -- 2020}
+\textit{工学学士}\ 计算机科学与技术， GPA：3.6/4.0
+
+\section{实习/项目经历}
+% \datedsubsection{\textbf{字节跳动 - 暑期实习}}{山景城, 加州, 美国 \quad 2022年6月 -- 2022年9月}
+\datedsubsection{\textbf{清华大学 - 科研助理}}{北京, 中国 \quad 2020年9月 -- 2021年7月}
+
+概率式关联可信中文知识图谱
+\begin{itemize}
+    \item 为了利用上被传统知识图谱所忽视的内部链接信息，我们使用维基百科的内部链接构造边，统计目标实体在源实体定义文本中出现的频度，用其对应的TF-IDF值作为边权，
+    并使用知识嵌入算法去除偶发链接，从而构造了一个概率式且更可信的中文知识图谱
+    \item 负责构建了用于展示和调试的知识图谱可视化工具
+    \item 二作论文: 概率式关联可信中文知识图谱—“文脉”(李文浩, 刘文长, 孙茂松, 矣晓沅)被CCKS2021收录
+\end{itemize}
+
+九歌 - 人工智能诗歌写作系统开发
+\begin{itemize}
+    \item 参与开发的该人工智能系统自2017上线以来已累计创作超过1500万首诗歌
+    \item 负责开发九歌基于React/Vue的网页应用并使用Nginx/Apache部署
+\end{itemize}
+
+\datedsubsection{\textbf{曼彻斯特大学 - 本科毕业设计}}{曼彻斯特， 英国 \quad 2019年11月 -- 2020年5月}
+基于生成对抗网络的图像翻译
+\begin{itemize}
+    \item 在Google Colab上使用PyTorch框架上训练了两个基于Pix2pixHD和SPADE论文，能够将语义分割图
+    转化为如相片般图片的生成对抗网络模型
+    \item 将模型应用于一个更小规模的数据集上，只使用了不到原论文1/8的计算资源进行训练
+    \item 使用Flask和JavaScript构建了能够让用户简单体验使用两个不同模型进行图像翻译的网页应用Demo
+\end{itemize}
+
+\datedsubsection{\textbf{VMware威睿 - 暑期实习}}{北京，中国 \quad 2019年6月 -- 2019年8月}
+
+数学知识图谱网页应用开发（与其他实习生合作开发）
+\begin{itemize}
+    \item 使用KMeans聚类自动从维基百科2000多个章节的文本数据中提取了25类关系
+    \item 为了制作原型Demo，手工标注中学数学知识数据，并使用rdf三元组的方式定义
+    \item 使用Flask后端框架和Echarts可视化工具构建简单的网页应用Demo
+\end{itemize}
+
+\datedsubsection{\textbf{曼彻斯特大学 - 课设项目}}{曼彻斯特, 英国 \quad 2018年9月 -- 2019年12月}
+
+Kalah桌游AI (与另外两名组员一起开发)
+\begin{itemize}
+    \item 构建了可以玩Kalah(Mancala)桌游的AI
+    \item 通过对前三步的硬编码使得我们的Alpha-beta剪枝算法获得了超过100\%的速度提升
+    \item 我们的AI机器人在该课最后的比赛中获得了第一名
+\end{itemize}
+
+软件工程课设 (与另外5名组员一起开发)
+\begin{itemize}
+    \item 维护基于Java的游戏Stendal，构建了一个类似Eventbrite的网页应用Eventlite
+    \item 实践了包括估算时间，代码审核，编写测试，重构代码等在内的软件工程概念
+    \item 学习了Spring框架、Bootstrap、Thymeleaf引擎等技术
+\end{itemize}
+
+\section{技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+    \item 编程语言: Python, C, HTML, CSS, JavaScript, SQL, Java
+    \item 框架: Scikit-Learn, Flask, Keras, PyTorch, React(Hooks), Vue, TailwindCSS, WindowsForm
+    \item 工具: Git, Jupyter Notebook, Latex, Apache, Nginx, Matlab, Jenkins, Docker
+    \item 语言：雅思7.5，六级655
+\end{itemize}
+
+\end{document}

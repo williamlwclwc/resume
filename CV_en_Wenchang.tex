@@ -1,0 +1,96 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\usepackage{geometry}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=0.3cm,bottom=0.3cm}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+
+\name{Wenchang Liu}
+
+\basicInfo{
+    \email{wchliu@ucdavis.edu} \textperiodcentered\ 
+    \phone{+1(916)237-2817} \textperiodcentered\
+    \linkedin[wenchang-liu]{https://www.linkedin.com/in/wenchang-liu-938a6bb2} \textperiodcentered\
+    \github[williamlwclwc]{https://github.com/williamlwclwc} \textperiodcentered\
+    \homepage[williamlwclwc.github.io]{https://williamlwclwc.github.io}
+}
+
+\section{Education}
+\datedsubsection{\textbf{University of California, Davis}, CA, US}{2021/09 -- Present\space}
+\textit{M.S.} in Computer Science (CS), Current GPA: 4.0
+
+\datedsubsection{\textbf{The University of Manchester}, Manchester, UK}{2018/09 -- 2020/07}
+\textit{B.S.(Hons)} in Artificial Intelligence (AI), 2+2 Exchange Program, GPA: 82.5/100
+
+\textit{Achievements:} First Class Honours Degree, Certificate of Excellence Award (Top 10\%)
+
+\datedsubsection{\textbf{Huazhong University of Science and Technology}, Wuhan, China}{2016/09 -- 2020/06}
+\textit{B.E.} in Computer Science and Technology (CS), 2+2 Exchange Program, GPA: 3.6/4.0
+
+\section{Experience / Projects}
+% \datedsubsection{\textbf{TikTok/ByteDance - Incoming Summer Intern}}{Mountain View, CA, USA \quad 2022/06 -- 2022/09}
+\datedsubsection{\textbf{Tsinghua University - Research Assistant}}{Beijing, China \quad 2020/09 -- 2021/07}
+
+Reliable Wiki Knowledge Graph Construction with Probabilistic Weighted Links
+\begin{itemize}
+    \item To make better use of the hidden knowledge in the internal links of Wikipedia that are often overlooked by the traditional KGs, 
+    we constructed a reliable KG by extracting pages as the nodes, pagelinks as edges, calculating TF-IDF as the relatedness weights for each edge, 
+    and filtering edges with knowledge embedding algorithms
+    \item Built a front end visualization tool of the KG for debugging and demonstration
+    \item 2nd authored paper (WenMai - Chinese Reliable Knowledge Graph with Probabilistic Links) has been accepted by CCKS2021 conference (with Wenhao Li, Maosong Sun, Xiaoyuan Yi)
+\end{itemize}
+
+Jiuge - Chinese AI Poem System Web Application Development
+\begin{itemize}
+    \item Contributed to the AI systems which have composed more than 15 million poems since 2017
+    \item Lead engineer of Web Apps built with React/Vue and deployed with Nginx/Apache
+\end{itemize}
+
+\datedsubsection{\textbf{Final Year Project - Undergraduate}}{Manchester, UK \quad 2019/11 -- 2020/05}
+
+Image-to-Image Translation Using Generative Adversarial Networks
+\begin{itemize}
+    \item Trained PyTorch GAN models on Google Colab based on papers Pix2pixHD and SPADE which can translate segmentation maps into photorealistic images 
+    \item Applied the model to a smaller scale dataset using only less than 1/8 computing power to train
+    \item Built a web app demo with Flask that allows the user to try image translation with the two models
+\end{itemize}
+
+\datedsubsection{\textbf{VMware - MTS Intern}}{Beijing, China \quad 2019/06 -- 2019/08}
+
+Math Knowledge Graph Web App
+\begin{itemize}
+    \item Clustered 25 classes of relations from more than 2000 sections of Wikipedia data using KMeans
+    \item Manually labeled middle school math knowledge data in RDF triples format to build prototype demo
+    \item Built Web App Demo with the Flask back end framework and the Echarts visualization tool
+\end{itemize}
+
+\datedsubsection{\textbf{Undergraduate Team Projects - Undergraduate}}{Manchester, UK \quad 2018/09 -- 2019/12}
+
+Kalah Game AI Bot (with other 2 students)
+\begin{itemize}
+    \item Built agents that can play the board game Kalah(Mancala)
+    \item With the trick of hardcoded the first 3 steps, our Alpha-beta Pruning agent runs at least 100\% faster than before
+    \item Our bot won the course's final tournament (ranked 1st)
+\end{itemize}
+
+Software Engineering Team Coursework (with a group of 5 other students)
+\begin{itemize}
+    \item Maintained a Java game Stendhal and built a website Eventlite like Eventbrite
+    \item Practiced software engineering concept including estimation, code review, implementing tests, refactoring, etc.
+    \item Learned frameworks such as Spring framework, Bootstrap, Font-awesome, and Thymeleaf template engine 
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}
+    \item Languages: Python, C, HTML, CSS, JavaScript, SQL, Java
+    \item Frameworks: Scikit-Learn, Flask, PyTorch, React(Hooks), Vue, TailwindCSS, WindowsForm
+    \item Tools: Git, Jupyter Notebook, Latex, Apache, Nginx, Matlab, Jenkins, Docker
+\end{itemize}
+
+\end{document}

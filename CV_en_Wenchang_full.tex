@@ -1,0 +1,156 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Wenchang Liu}
+
+\basicInfo{
+    \email{william.wenchang.liu@outlook.com} \textperiodcentered\ 
+    \phone{(+86) 155-1051-6891}  
+}
+
+\basicInfo{
+    \linkedin[wenchang-liu]{https://www.linkedin.com/in/wenchang-liu-938a6bb2} \textperiodcentered\
+    \github[williamlwclwc]{https://github.com/williamlwclwc} \textperiodcentered\
+    \homepage[williamlwclwc.github.io]{https://williamlwclwc.github.io}
+}
+
+\section{Summary / Bio}
+I am an incoming MSCS student at UC Davis. 
+I completed dual bachelor's degrees in Artificial Intelligence / Computer Science from the University of Manchester and 
+Huazhong University of Science and Technology in 2020. I am passionate about machine learning and web technologies, 
+adept at self-learning and collaborating with others. I worked as an MTS summer intern at the R\&D department of VMware in Beijing, 
+and I also worked as a research assistant at THUNLP lab at Tsinghua University during my gap year. 
+
+\section{Education}
+\datedsubsection{\textbf{University of California, Davis}, CA, US}{2021/09 -- N/A\space\space\space\space\space\space}
+\textit{M.S.} in Computer Science (CS)
+
+\datedsubsection{\textbf{The University of Manchester}, Manchester, UK}{2018/09 -- 2020/07}
+\textit{B.S.(Hons)} in Artificial Intelligence (AI), 2+2 Exchange Program, GPA: 82.5/100
+
+\textit{Achievements:} First Class Honours Degree, Certificate of Excellence Award (Top 10\%)
+
+\datedsubsection{\textbf{Huazhong University of Science and Technology}, Wuhan, China}{2016/09 -- 2020/06}
+\textit{B.E.} in Computer Science and Technology (CS), 2+2 Exchange Program, GPA: 3.6/4.0
+
+\section{Experience / Projects}
+\datedsubsection{\textbf{Tsinghua University}}{Beijing, China \quad 2020/09 -- Now\space\space\space\space\space}
+\role{Research Assistant (THUNLP Group), Supervised by Prof. Maosong Sun}
+
+Wiki Knowledge Graph Construction with Probabilistic Weighted Links
+\begin{itemize}
+    \item Used all pages in namespace 0 (ns0) as the nodes / entities of the knowledge graph
+    \item Extracted the pagelinks as the edges of the knowledge graph
+    \item Calculated and assign the TF-IDF scores as the relatedness weights for each edge
+    \item Built a simple front end visualization tool for the knowledge graph
+    \item Related paper has been submitted to ccks2021 conference (2nd Author)
+\end{itemize}
+
+Jiuge Chinese AI Poem System Web Application Development
+\begin{itemize}
+    \item Web Apps are primarily built with React, Celery, Flask and deployed with Nginx/Apache
+    \item Jiuge Couplet: http://jiuge.thunlp.org/duiduizi/
+    \item Jiuge Jiju(poems made up of lines from existing poems) Poem: http://jiuge.thunlp.org/jijushi/
+    \item Jiuge Semantic Poem Search: http://jiuge.thunlp.org/souqi/
+\end{itemize}
+
+\datedsubsection{\textbf{VMware}}{Beijing, China \quad 2020/06 -- 2020/09}
+\role{Project Participant, Supervised by R\&D Director Kevin Song}
+
+Intelligent Software Engineering Projects Management System (with other interns)
+\begin{itemize}
+    \item Participated in VMware Project SoftXtream, mainly working as a front end developer
+    \item Built web portal front end separately from back end with React(Hooks)
+    \item Built enterprise front end application using Ant Design Pro(Ant Design UI + UmiJs + Dva)
+    \item Integrated SSO login for multiple services using Keycloak
+\end{itemize}
+
+\datedsubsection{\textbf{Final Year Project}}{Manchester, UK \quad 2019/11 -- 2020/05}
+\role{Undergraduate, Supervised by Prof. Angelo Cangelosi}
+
+Image-to-Image Translation Using Generative Adversarial Networks
+\begin{itemize}
+    \item Trained two GAN models based on the papers Pix2pixHD and SPADE which can 
+    translate segmentation maps into photorealistic images using PyTorch on Google Colab
+    \item Built a web app demo with Flask that allows the user to try image translation with the two models
+    \item Built a simple segmentation maps drawing tool with JavaScript
+\end{itemize}
+
+\datedsubsection{\textbf{AI and Games Team Coursework}}{Manchester, UK \quad 2019/11 -- 2019/12}
+\role{Undergraduate, Team Member}
+
+Kalah Game AI Bot
+\begin{itemize}
+    \item Built an agent that can play the board game Kalah(Mancala)
+    \item Trained a DQN agent against other existing agent using PyTorch
+    \item Assisted other members with Alpha-Beta Pruning and MCTS agents
+    \item Our bot won the course tournament (\#1)
+\end{itemize}
+
+\datedsubsection{\textbf{VMware}}{Beijing, China \quad 2019/06 -- 2019/08}
+\role{MTS Intern, Supervised by R\&D Director Kevin Song}
+
+Math Knowledge Graph Web App (with other interns)
+\begin{itemize}
+    \item Clustered 25 classes of relations from more than 2000 sections of Wikipedia data using KMeans
+    \item Manually labeled middle school math knowledge data in rdf triples format to build prototype demo
+    \item Built Web App Demo with the Flask back end framework and the Echarts visualization tool
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineering 2 Team Coursework}}{Manchester, UK \quad 2019/03 -- 2019/06}
+\role{Undergraduate, Team Member}
+
+Eventlite (an event information website)
+\begin{itemize}
+    \item Built a website like Eventbrite where people can explore events information
+    \item Used Spring framework and implemented functions such as login, upload tweeter, search events, manipulate DB, show location on map, and so forth
+    \item Modified front end with Bootstrap, Font-awesome, and Thymeleaf template engine 
+    \item Developed Unit tests and Integration tests
+\end{itemize}
+
+\datedsubsection{\textbf{Software Engineering 1 Team Coursework}}{Manchester, UK \quad 2018/09 -- 2019/01}
+\role{Undergraduate, Team Member}
+
+Stendhal (a game developed with Java)
+\begin{itemize}
+    \item Maintained a Java game including adding features, writing tests, fixing bugs, and refactoring code bases
+    \item Learned to use various tools including Eclipse IDE, Git, Jenkins, etc.
+    \item Learned software engineering workflow such as estimation, writing wiki pages, code review, etc.
+    \item Developed Junit tests for the project
+\end{itemize}
+
+\section{Other Information}
+Computer Skills
+\begin{itemize}
+    \item Programming Languages: Python, C, JavaScript, SQL, Java
+    \item Frameworks: Scikit-Learn, Flask, Keras, PyTorch, React(Hooks), WindowsForm, Unity3D
+    \item Tools: Git, Jupyter Notebook, Latex, Apache, Nginx, Matlab, Jenkins, Linux, Windows
+\end{itemize}
+
+Standard Tests:
+\begin{itemize}
+    \item IELTS 7.5 (L: 8.0, R: 9.0, W: 6.5, S: 7.0)
+    \item GRE 319 (V: 152, Q: 167, AW: 3.5)
+\end{itemize}
+
+Language Skills:
+\begin{itemize}
+    \item Mandarin (Native)
+    \item English (Professional working proficiency)
+\end{itemize}
+
+Community and Campus Activities: 
+\begin{itemize}
+    \item “Internet Plus” Innovation and Entrepreneurship Competition Volunteer, 2016/10
+    \item Member of Qiming 3D Printing Team (Software Group), 2017/10 -- 2018/06
+\end{itemize}
+
+Hobbies: basketball, movies, music, Go (board game), computer software / electronic products fancier
+
+\end{document}
